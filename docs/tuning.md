@@ -7,7 +7,9 @@ TODO - INTRODUCTIONARY INFO HERE
 Ensure that in the `TuningOpModes.java` class the `DRIVE_CLASS` variable is updated to match either MecanumDrive.class or TankDrive.class
 Open either `MecanumDrive.java` or `TankDrive.java` depending on your bot in Android studio under the `teamcode` package.
 **If using MecanumDrive:** Ensure that when configuring the hardware the motor names are `"leftFront"`,  `"leftBack"`, `"rightBack"`, `"rightFront"`
+
 TODO - IMAGE OF INITIALIZATION
+
 **If using TankDrive:** TODO
 
 **If using dead wheels:** Make sure that your configuration has odometry modules plugged in the motor encoder ports, and the corresponding names of par0, par1 and perp should be modified in the `ThreeDeadWheelLocalizer.java` or `TwoDeadWheelLocalizer.java`.
@@ -15,7 +17,9 @@ TODO - IMAGE OF INITIALIZATION
 For more information see [this page](https://ftc-docs.firstinspires.org/en/latest/hardware_and_software_configuration/configuring/index.html)
 
 ### Step 2 - Updating IMU setup according to orientation
+
 TODO - PICTURE OF WHERE IMU IS INITIALIZED
+
 Locate where the IMU is initialized in the drive class.
 Update the `RevHubOrientationOnRobot.LogoFacingDirection.UP` parameter based on how the Rev Control Hub is oriented in your robot. Change to UP / DOWN / LEFT / RIGHT / FORWARD / BACKWARD as in robot
 Update the `RevHubOrientationOnRobot.UsbFacingDirection.FORWARD` parameter based on how the USB port of the Rev Control Hub is oriented in your robot. Change to UP / DOWN / LEFT / RIGHT / FORWARD / BACKWARD as in robot
