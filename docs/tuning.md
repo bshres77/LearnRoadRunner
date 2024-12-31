@@ -36,5 +36,9 @@ Download the code on to the control hub.
 
 ### Step 4 - Calibrating motor movement direction
 
+::: warning The robot is needed for this step, please ensure that battery level is over 12.5 V :::
+
+On the driver hub
+
 
 
