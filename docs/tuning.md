@@ -36,9 +36,39 @@ Download the code on to the control hub.
 
 ### Step 4 - Calibrating motor movement direction
 
-::: warning The robot is needed for this step, please ensure that battery level is over 12.5 V :::
+warning The robot is needed for this step, please ensure that battery level is over 12.5 V
 
-On the driver hub
+On the driver hub start the Opmode `MecanumDirectionDebugger` to make sure the directions for the motors are all correct.
+The Opmode uses the following button mappings for each motor
+
+   Xbox/PS4 Button - Motor \
+   X / ▢         - Front Left \
+   Y / Δ         - Front Right \
+   B / O         - Rear  Right \
+   A / X         - Rear  Left \
+     The buttons are mapped to match the wheels spatially if you \
+     were to rotate the gamepad 45deg°. x/square is the front left \
+     and each button corresponds to the wheel as you go clockwise \
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ ______ \ \
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;------------.-'   _  '-..+              Front of Bot \
+              /   _  ( Y )  _  \                  ^
+             |  ( X )  _  ( B ) |     Front Left   \    Front Right
+        ___  '.      ( A )     /|       Wheel       \      Wheel
+      .'    '.    '-._____.-'  .'       (x/▢)        \     (Y/Δ)
+     |       |                 |                      \
+      '.___.' '.               |          Rear Left    \   Rear Right
+              '.             /             Wheel       \    Wheel
+               \.          .'              (A/X)        \   (B/O)
+                 \________/
+ 
+
+Note: If using drive encoders, the ticks recorded should increase in a positive direction.
+
+If the directions are incorrect, you can reverse the direction with the following code:
+
+[motorname].setDirection(DcMotorEx.Direction.REVERSE);
+
+
 
 
 
